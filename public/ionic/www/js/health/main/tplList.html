@@ -1,0 +1,17 @@
+<ion-view>
+    <div style="padding-top: 60px;">
+        <md-progress-linear md-mode="indeterminate" style="display: {{loadingDisplay}}; padding-top:100px;"></md-progress-linear>
+        <md-list-item ng-repeat="workout in workoutList" ng-click="gotoWorkout(workout, $event)">
+            <div  style="padding-left: 10px;float: left; width:200px;">
+            <h3>{{ workout.name }}</h3>
+            <p>{{ workout.difficulity }}</p>
+            </div>
+            <div style="float: right">
+            <md-switch ng-model="workout.done" aria-label="Switch 1" ng-disabled="true">
+
+            </md-switch>
+            </div>
+        </md-list-item>
+
+    </div>
+</ion-view>

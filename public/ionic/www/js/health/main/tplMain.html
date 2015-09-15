@@ -1,0 +1,37 @@
+
+<ion-side-menus>
+    <!-- Center content -->
+    <ion-side-menu-content edge-drag-threshold="true" drag-content="true">
+
+        <ion-tabs>
+            <ion-tab title="当前训练" href="#/main/list">
+                <ion-nav-bar class="nav-title-slide-ios7 bar-positive">
+                    <ion-nav-title style="">当前训练</ion-nav-title>
+                </ion-nav-bar>
+                <ion-nav-view name="workoutlist-tab" ></ion-nav-view>
+            </ion-tab>
+            <ion-tab title="计划训练" href="#/main/plan">
+                <ion-nav-bar class="nav-title-slide-ios7 bar-positive">
+                    <ion-nav-title style="">计划训练</ion-nav-title>
+                </ion-nav-bar>
+                <ion-nav-view name="targetplan-tab" ></ion-nav-view>
+            </ion-tab>
+        </ion-tabs>
+    </ion-side-menu-content>
+
+    <!-- Left menu -->
+    <ion-side-menu side="left">
+        <ion-content>
+            <div style="padding: 10px;">
+                我想这一切都是幻想
+            </div>
+            <ion-list>
+                <ion-item ng-repeat="item in leftColumnItem" ng-click="leftMenuClick(item.func)">
+                    {{item.name}}
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
+
+

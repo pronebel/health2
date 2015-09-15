@@ -1,0 +1,69 @@
+<ion-nav-bar class="nav-title-slide-ios7 bar-positive">
+    <ion-nav-title style="">注册</ion-nav-title>
+</ion-nav-bar>
+<ion-view style="padding-top:60px;>
+
+        <div style="padding-left:20px; ">
+<label>
+    您的手机：
+</label>
+        <label>{{mobile}}</label>
+</div>
+
+        <div>
+            <md-button ng-click="selectImage()">
+                选择一个头像
+            </md-button>
+
+        </div>
+<img ng-src="avatarSource" style="height:100px; width:100px;"/>
+        <div style="padding-left:20px; ">
+<md-input-container flex style="width:300px;">
+    <label>您刚才收到的短信</label>
+    <input ng-model="user.varify" placeholder="验证码">
+</md-input-container>
+
+</div>
+
+<div style="padding-left:20px; ">
+            <md-select placeholder="你不是千年老妖，还是选个年龄吧" ng-model="user.birth" style="padding-left:30px;" >
+                <md-option ng-value="year" ng-repeat="year in years">{{year}}</md-option>
+            </md-select>
+        </div>
+
+        <div style="padding-left:20px; padding-top: 20px;">
+            我想，我应该属于：
+        </div>
+
+        <div style="padding-left:20px;">
+            <md-radio-group ng-model="user.gender" style="padding-left:30px; ">
+                <md-radio-button value="1" class="md-primary" >雄性激素支配者</md-radio-button>
+                <md-radio-button value="2" >半边天</md-radio-button>
+            </md-radio-group>
+
+        </div>
+
+        <div style="padding-left:20px">
+            <md-input-container flex style="width:300px;">
+                <label>您的姓名</label>
+                <input ng-model="user.name" placeholder="我知道你不叫狗子">
+            </md-input-container>
+        </div>
+
+        <div>
+            <md-select placeholder="不能说的秘密" ng-model="user.weight" style="padding-left:30px;">
+                <md-option ng-repeat="weight in weights" ng-value="weight">{{weight}}</md-option>
+            </md-select>
+        </div>
+
+        <div>
+            <md-select placeholder="需要尺子测量" ng-model="user.height" style="padding-left:30px;">
+                <md-option ng-repeat="height in heights" ng-value="height">{{height}}</md-option>
+            </md-select>
+        </div>
+
+<div style="padding-left:20px; padding-top:20px;">
+            <md-button class="md-raised md-primary" ng-click='clickReg(evt)'>走一个</md-button>
+    <md-button class="md-raised" ng-click="clickShare(evt)">分享我的注册</md-button>
+        </div>
+</ion-view>

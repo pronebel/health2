@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-xs-12">
+
+        <div class="widget-box">
+            <div class="widget-title">
+                <span class="icon">
+                    <i class="fa fa-th"></i>
+                </span>
+                <h5>{{title}}</h5>
+                <span class="badge">
+                    <a href="/subject/edit">发布专题</a>
+                </span>
+            </div>
+            <div class="widget-content nopadding">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th width="100">站名</th>
+                        <th width="100">拼音</th>
+                        <th width="100">缩写</th>
+                        <th>地址情况</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{#stations}}
+                    <tr>
+                        <td>{{station}}</td>
+                        <td>{{pinyin}}</td>
+                        <td>{{alias}}</td>
+                        <td>
+                            <table style="width: 100%;">
+                            {{#address}}
+
+                                <tr>
+                                {{#if location}}
+                                    <td width="100">{{name}}</td>
+                                    <td >{{address}} </td>
+                                    <td  width="200">[{{location.lat}},{{location.lng}}]</td>
+                                {{^}}
+                                    <td colspan="3">
+                                    {{name}} {{num}}
+                                    </td>
+                                {{/if}}
+                                </tr>
+                            {{/address}}
+                            </table>
+                        </td>
+                    </tr>
+                    {{/stations}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+</div>

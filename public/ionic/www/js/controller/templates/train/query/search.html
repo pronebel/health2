@@ -1,0 +1,22 @@
+<ion-view title="火车查询">
+    <ion-header-bar class="bar bar-header bar-calm">
+        <button class="button button-clear   back-button" ui-sref="app.index()">
+            <i class="icon ion-ios7-arrow-back"></i>返回
+        </button>
+        <h1 class="title"> 火车查询</h1>
+
+    </ion-header-bar>
+    <ion-content padding="true" class="has-header">
+        <form>
+            <label class="item item-input">
+                <span class="input-label">起始站</span>
+                <input type="text" ng-model="train.start" placeholder="请输入出发站名称">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">目的地</span>
+                <input type="text" ng-model="train.end" placeholder="请输入目的地站点名称">
+            </label>
+        </form>
+        <button class="button button-dark button-block" ng-click="searchTrain()">查询</button>
+    </ion-content>
+</ion-view>

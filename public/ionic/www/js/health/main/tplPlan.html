@@ -1,0 +1,14 @@
+<ion-view>
+    <ion-content>
+        <md-progress-linear md-mode="indeterminate" style="display: {{loadingDisplay}}; padding-top:100px;"></md-progress-linear>
+        <md-list-item ng-repeat="target in targetList" style="display:inline-block">
+            <div  style="padding-left: 10px;float: left; width:200px;">
+                <h3>训练项目{{ target.target }}</h3>
+                <p>难度{{ target.difficulity }}</p>
+                <p>时间{{ target.time }}</p>
+            </div>
+        </md-list-item>
+        <div> </div>
+        <md-button class="md-raised md-primary" ng-click='clickSyncToCal()'>同步到日历</md-button>
+    </ion-content>
+</ion-view>

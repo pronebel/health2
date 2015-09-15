@@ -1,0 +1,157 @@
+<ion-view title="随时随地旅行">
+    <ion-header-bar class="bar bar-header bar-calm">
+        <button class="button button-clear   back-button"  ng-click="goSearch()">
+            <i class="icon ion-ios7-arrow-back"></i>返回
+        </button>
+        <h1 class="title">随时随地旅行-景点推荐</h1>
+
+    </ion-header-bar>
+ <!--   <ion-refresher
+            pulling-text="Pull to refresh..."
+>
+    </ion-refresher>-->
+  <ion-content class="has-header padding" >
+
+      <ion-list  >
+          <ion-item class="travel-list" >
+
+              <div style="height:120px;padding-bottom:50px;">
+                  <div style="padding-left:100px;">
+                      <img ng-src="http://ww1.sinaimg.cn/bmiddle/67289d66jw1ejtcjjzeoej20go0b5go5.jpg"
+                           style="max-width:80px;margin-left:-90px;float:left">
+                      <h2>东方明珠 （<a href="#" class="subdued">1000去过</a>）</h2>
+                      <p>摄影师 Richard Silver 以各种奇趣的摄影创意闻名，这回他又想到了一个新点子“Time Sliced”</p>
+                  </div>
+                  <div class=" tabs tabs-secondary tabs-icon-left">
+
+                      <a class="tab-item" href="#">
+                          <i class="icon ion-thumbsup"></i>
+                          赞(5)
+                      </a>
+                      <a class="tab-item" href="#">
+                          <i class="icon ion-chatbox"></i>
+                          评论(100)
+                      </a>
+
+                      <a class="tab-item" href="#">
+                          <i class="icon ion-share"></i>
+                          分享
+                      </a>
+                  </div>
+              </div>
+              <ion-option-button class="button-assertive" ng-click="actRemove(item)">删除</ion-option-button>
+          </ion-item>
+      </ion-list>
+
+
+      <div class="list card">
+
+          <div class="item item-avatar">
+              <img src="http://ww1.sinaimg.cn/bmiddle/67289d66jw1ejtcjjzeoej20go0b5go5.jpg">
+              <h2>东方明珠 （<a href="#" class="subdued">1000去过</a>）</h2>
+              <p>摄影师 Richard Silver 以各种奇趣的摄影创意闻名，这回他又想到了一个新点子“Time Sliced”，</p>
+
+          </div>
+          <div class="item tabs tabs-secondary tabs-icon-left">
+              <a class="tab-item" href="#">
+                  <i class="icon ion-thumbsup"></i>
+                  赞(5)
+              </a>
+              <a class="tab-item" href="#">
+                  <i class="icon ion-chatbox"></i>
+                  评论(100)
+              </a>
+
+              <a class="tab-item" href="#">
+                  <i class="icon ion-share"></i>
+                  分享
+              </a>
+          </div>
+      </div>
+      <div class="list card">
+
+          <div class="item item-avatar">
+              <img src="http://ww1.sinaimg.cn/bmiddle/67289d66jw1ejtcjjzeoej20go0b5go5.jpg">
+              <h2>东方明珠 （<a href="#" class="subdued">1000去过</a>）</h2>
+              <p>摄影师 Richard Silver 以各种奇趣的摄影创意闻名，这回他又想到了一个新点子“Time Sliced”，</p>
+
+          </div>
+          <div class="item tabs tabs-secondary tabs-icon-left">
+              <a class="tab-item" href="#">
+                  <i class="icon ion-thumbsup"></i>
+                  赞(5)
+              </a>
+              <a class="tab-item" href="#">
+                  <i class="icon ion-chatbox"></i>
+                  评论(100)
+              </a>
+
+              <a class="tab-item" href="#">
+                  <i class="icon ion-share"></i>
+                  分享
+              </a>
+          </div>
+      </div>
+
+      <div class="list card">
+
+          <div class="item item-avatar">
+              <img src="http://ww1.sinaimg.cn/bmiddle/67289d66jw1ejtcjjzeoej20go0b5go5.jpg">
+              <h2>东方明珠 （<a href="#" class="subdued">1000去过</a>）</h2>
+              <p>摄影师 Richard Silver 以各种奇趣的摄影创意闻名，这回他又想到了一个新点子“Time Sliced”，</p>
+
+          </div>
+          <div class="item tabs tabs-secondary tabs-icon-left">
+              <a class="tab-item" href="#">
+                  <i class="icon ion-thumbsup"></i>
+                  赞(5)
+              </a>
+              <a class="tab-item" href="#">
+                  <i class="icon ion-chatbox"></i>
+                  评论(100)
+              </a>
+
+              <a class="tab-item" href="#">
+                  <i class="icon ion-share"></i>
+                  分享
+              </a>
+          </div>
+      </div>
+
+      <div class="list card">
+
+          <div class="item item-avatar">
+              <img src="http://ww1.sinaimg.cn/bmiddle/67289d66jw1ejtcjjzeoej20go0b5go5.jpg">
+              <h2>东方明珠 （<a href="#" class="subdued">1000去过</a>）</h2>
+              <p>摄影师 Richard Silver 以各种奇趣的摄影创意闻名，这回他又想到了一个新点子“Time Sliced”，</p>
+
+          </div>
+          <div class="item tabs tabs-secondary tabs-icon-left">
+              <a class="tab-item" href="#">
+                  <i class="icon ion-thumbsup"></i>
+                  赞(5)
+              </a>
+              <a class="tab-item" href="#">
+                  <i class="icon ion-chatbox"></i>
+                  评论(100)
+              </a>
+
+              <a class="tab-item" href="#">
+                  <i class="icon ion-share"></i>
+                  分享
+              </a>
+          </div>
+      </div>
+
+
+      <ion-infinite-scroll
+
+              icon="ion-loading-c" distance="10%"
+              on-infinite="loadMoreData()">
+      </ion-infinite-scroll>
+
+  </ion-content>
+    <footer class="bar bar-footer">
+        <button class="button  button-block  button-positive">保存</button>
+    </footer>
+</ion-view>

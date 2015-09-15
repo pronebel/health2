@@ -1,0 +1,55 @@
+<ion-view title="随时随地旅行">
+    <ion-header-bar class="bar bar-header bar-calm">
+        <button class="button button-clear   back-button"  ng-click="goSearch()">
+            <i class="icon ion-ios7-arrow-back"></i>返回
+        </button>
+        <h1 class="title"> {{title}}</h1>
+
+    </ion-header-bar>
+ <!--   <ion-refresher
+            pulling-text="Pull to refresh..."
+>
+    </ion-refresher>-->
+  <ion-content class="has-header padding" >
+      <div  ng-repeat="item in commendlist">
+
+
+      <div class="list card"  ng-class="{itemSelected:item.selected}">
+
+          <div class="item item-avatar">
+              <img src="http://ww1.sinaimg.cn/bmiddle/67289d66jw1ejtcjjzeoej20go0b5go5.jpg">
+
+              <h2>{{item.poi_name}}({{item.poi_duration}}小时)<i class="ion-arrow-down-b " ng-click="showOper(item)" style="float: right;padding:5px 10px;" data-pack="default" data-tags=""></i></h2>
+              <p></p>
+
+          </div>
+          <div class="item tabs tabs-secondary tabs-icon-left">
+              <a class="tab-item" href="#">
+                  <i class="icon ion-thumbsup"></i>
+                  赞(5)
+              </a>
+              <a class="tab-item" href="#">
+                  <i class="icon ion-chatbox"></i>
+                  评论(100)
+              </a>
+
+              <a class="tab-item" href="#">
+                  <i class="icon ion-share"></i>
+                  分享
+              </a>
+          </div>
+      </div>
+
+      </div>
+
+      <ion-infinite-scroll   icon="ion-loading-c" distance="5%" ng-if="moreDataCanBeLoaded()"
+              on-infinite="loadMoreData()">
+      </ion-infinite-scroll>
+
+  </ion-content>
+    <footer class="bar bar-footer">
+        <button class="button  button-block  button-positive" style="margin:0;" ng-click="savePlan()">
+           游玩预计需要{{hours}}小时，保存为行程
+        </button>
+    </footer>
+</ion-view>

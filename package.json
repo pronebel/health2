@@ -1,0 +1,89 @@
+{
+  "name": "sleek.js",
+  "version": "0.1.55",
+  "homepage": "http://www.sleekjs.com",
+  "title": "Fully flexible mvc wrapper framework for node.js, developed using express, handlebars, mongodb as base dependecies with pluggable modules & themes support",
+  "keywords": [
+    "sleek",
+    "sleekjs",
+    "realtime",
+    "node mvc",
+    "express mvc",
+    "webapp",
+    "mvc",
+    "framework",
+    "mongodb",
+    "theming",
+    "handlebars",
+    "cubet",
+    "grunt installer",
+    "flexible",
+    "service",
+    "application",
+    "web",
+    "site"
+  ],
+  "author": "cubettech<info@cubettech.com>",
+  "description": "Sleek.js is an MVC wrapper implemented from Node.JS, built-in with base dependency on handlebars.js, express.js. Sleek.js architecture follows common format of MVC which makes it easy to handle and build better web apps with pluggable modules & themes support.",
+  "contributors": [
+    {
+      "name": "Cubet Techno Labs",
+      "email": "info@cubettech.com"
+    },
+    {
+      "name": "Robin C Samuel",
+      "email": "robin@cubettech.com"
+    }
+  ],
+  "private": false,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cubettech/sleekjs.git"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "async": "0.2.9",
+    "baidu-map": "^0.1.3",
+    "body-parser": "latest",
+    "connect-mongo": "latest",
+    "cookie-parser": "latest",
+    "express": "latest",
+    "express-session": "latest",
+    "express3-handlebars": "0.5.0",
+    "handlebars": "1.3.0",
+    "helmet": "0.1.2",
+    "json": "latest",
+    "method-override": "latest",
+    "mongodb": "1.3.19",
+    "mysql": "^2.6.1",
+    "sequelize": "^2.0.5",
+    "serve-favicon": "latest",
+    "urlencode": "latest",
+    "multiparty":"latest",
+    "request" :"latest",
+    "MD5":"latest"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-concurrent": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-cssc": "*",
+    "grunt-htmlhint": "*",
+    "grunt-nodemon": "*",
+    "grunt-node-inspector": "*",
+    "grunt-open": "*",
+    "grunt-shell": "*",
+    "grunt-wait": "*",
+    "matchdep": "*"
+  },
+  "license": "MIT"
+}

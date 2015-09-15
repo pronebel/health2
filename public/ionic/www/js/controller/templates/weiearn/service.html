@@ -1,0 +1,26 @@
+<ion-view>
+    <ion-header-bar class="bar bar-header bar-calm">
+        <button class="button button-clear   back-button" ng-click="goIndex()">
+            <i class="icon ion-ios7-arrow-back"></i>返回
+        </button>
+        <h1 class="title">我的服务</h1>
+        <button class="button button-icon ion-compose" ng-click="modal.show()">
+        </button>
+    </ion-header-bar>
+
+<ion-content>
+    <ion-list>
+        <div ng-repeat="group in groups">
+            <ion-item class="item-stable"  ng-click="group.shown = !group.shown" ng-class="{active: group.shown}">
+                <i class="icon ion-mic-a"></i>
+                {{group.name}}
+                <span class="item-note">￥{{group.price}}/日</span>
+            </ion-item>
+            <ion-item class="item-accordion"    ng-show="group.shown">
+                {{group.desc}}
+            </ion-item>
+        </div>
+
+    </ion-list>
+</ion-content>
+</ion-view>

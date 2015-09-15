@@ -1,0 +1,120 @@
+
+
+
+
+/***************************/
+.item-more {
+  float: right;
+  color: #aaa;
+  font-size: 14px;
+}
+
+
+
+
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 1;
+  transition: 0.09s all ease-in-out;
+}
+.list .item.item-accordion.ng-hide {
+  opacity: 0;
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+
+.ionic-contrib-blur {
+  overflow: hidden;
+  position:absolute;
+  width: 100%;
+  top:0;
+  left:0;
+  right:0;
+  -webkit-filter:blur(20px);
+  opacity:.25;
+  z-index: 1;
+}
+
+.bar-frosted {
+  background-color: #F7F7F7;
+}
+
+.messages {
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+
+.messages li {
+  display:block;
+  clear:both;
+  max-width:50%;
+  margin:0 0 1rem 0;
+  padding:0;
+}
+
+.messages li:nth-child(even) {
+  float:right;
+}
+
+.messages li:nth-child(even) img {
+  float:right;
+}
+
+.messages p {
+  border-radius:.75rem;
+  background:#e6e5eb;
+  color:#383641;
+  padding:.6875rem;
+  margin:0;
+  font-size:.875rem;
+}
+
+.messages li:nth-child(even) p {
+  background:#158ffe;
+  color:#fff;
+}
+
+.messages img {
+  display:block;
+  max-width:65%;
+  border-radius:.75rem;
+}
+
+
+
+
+
+
+.other {
+  width: 40px;
+  display: inline-block;
+  padding-top: 45px;
+  height: 20px;
+  line-height: 24px;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 25px;
+  background: url("img/new_login_v1.png") no-repeat center center;
+}
+
+.qq {
+  background-position: 0 -45px;
+}
+
+.xlblog {
+  min-width: 48px;
+  _width: 48px;
+  background-position: -50px -47px;
+}
+
+.weixin {
+  background-position: -103px -46px;
+}

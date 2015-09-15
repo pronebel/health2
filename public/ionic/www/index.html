@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <script>
+        var Cfg={
+            api:"http://192.168.173.152:3001/",
+            user_exists: "usr/exists",
+            user_reg:"usr/add",
+            workout_list:"workout/list",
+            workout_addtrack:"workout/add_track",
+            workout_plan: "workout/plan",
+            user_varification: "usr/getvaricode"
+        }
+    </script>
+    <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
+
+</head>
+<body animation="slide-left-right-ios7">
+
+
+<ion-nav-view  animation="slide-left-right"></ion-nav-view>
+
+<!-- ionic/angularjs js -->
+<script src="lib/ionic/js/ionic.bundle.js"></script>
+<script src="lib/ionic/js/angular/angular-resource.js"></script>
+
+<script src="lib/ionic/js/parse-1.2.17.js"></script>
+<script src="lib/angular-animate/angular-animate.min.js"></script>
+<script src="lib/angular-aria/angular-aria.min.js"></script>
+<script src="lib/angular-material/angular-material.min.js"></script>
+<script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+<script src="cordova.js"></script>
+<script src="lib/Calender/calender.js"></script>
+
+<script src="http://api.map.baidu.com/api?type=quick&ak=6ad07370e93c20ceb6637d0c4d879942&v=1.0" type="text/javascript"></script>
+<script src="lib/ext/jquery-2.0.3.min.js"></script>
+<script src="lib/ext/url.js"></script>
+<!-- <script src="lib/ext/socket.io.js"></script> -->
+<script src="lib/ext/angular-local-storage.js"></script>
+<script src="lib/ext/City.js"></script>
+<script src="lib/ext/moment.js"></script>
+<script src="lib/directives/selectbox.js"></script>
+
+
+<!-- app_start -->
+<script src="js/health/app.js"></script>
+<script src="js/health/routes.js"></script>
+<script src="js/health/landing/landing.js"></script>
+<script src="js/health/main/main.js"></script>
+<script src="js/health/single/single.js"></script>
+<script src="js/health/single/reg.js"></script>
+<script src="js/health/single/mobilevari.js"></script>
+<script src="js/health/start.js"></script>
+
+<!-- app controllers -->
+
+<!-- <script src="js/services/socket.js"></script> -->
+
+
+
+<!--<script src="js/base/user/memberCtrl.js"></script>
+<script src="js/base/baseCtrl.js"></script>
+<script src="js/base/router.js"></script> -->
+<!--<script src="js/health/main/indexCtrl.js"></script>
+<script src="js/health/router.js"></script>
+<script src="js/health/start.js"></script> -->
+</body>
+</html>

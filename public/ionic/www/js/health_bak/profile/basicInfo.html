@@ -1,0 +1,30 @@
+<ion-view title="基础信息">
+    <ion-content padding="true" class="has-header">
+        <div class="list">
+
+            <label class="item item-input">
+                <span class="input-label">性别</span>
+                <select-box ng-Selected-Text="profile.sex.name" ng-Selected-Value="profile.sex.value"  ng-title="性别"  ng-data="sex"></select-box>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">年龄</span>
+                <select-box ng-Selected-Text="profile.age.name" ng-Selected-Value="profile.age.value"  ng-title="年龄"  ng-data="ages" ></select-box>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">身高</span>
+                <select-box ng-Selected-Text="profile.height.name"   ng-Selected-Value="profile.height.value"   ng-title="身高" ></select-box>
+            </label>
+            <label class="item item-input">
+                <span class="input-label">体重</span>
+                <select-box ng-Selected-Text="profile.weight.name"  ng-Selected-Value="profile.weight.value"  ng-data="weight"></select-box>
+            </label>
+
+
+
+        </div>
+        <button ng-click="getProfile()">提交</button>
+
+    </ion-content>
+</ion-view>
+
+

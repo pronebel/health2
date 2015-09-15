@@ -1,0 +1,27 @@
+<ion-header-bar>
+    <div class="button-bar">
+        <button ng-click="getPhoto()" class="button icon-left ion-android-camera">Take photo</button>
+        <button ng-click="submit()" class="button button-outline icon-right ion-checkmark-circled button-balanced">Send!</button>
+    </div>
+</ion-header-bar>
+<ion-content padding="true">
+    <a href="#/app/index">go back</a>
+
+
+
+
+    <div>
+        <button ng-click="alert()" class="button icon-left ">alert</button>
+        <button ng-click="confirm()" class="button ">confirm!</button>
+        <button ng-click="prompt()" class="button ">prompt!</button>
+        <button ng-click="beep()" class="button ">beep!</button>
+        <button ng-click="vibrate()" class="button ">vibrate!</button>
+    </div>
+
+
+    <div class="list card">
+        <div class="item item-image">
+            <img ng-src="{{lastPhoto}}" style="max-width: 100%">
+        </div>
+    </div>
+</ion-content>

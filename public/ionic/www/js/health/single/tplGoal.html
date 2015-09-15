@@ -1,0 +1,16 @@
+<ion-nav-bar class="nav-title-slide-ios7 bar-positive">
+    <ion-nav-title style="">目标设定</ion-nav-title>
+</ion-nav-bar>
+<ion-view style="padding-top:60px;">
+        <div style="padding-left:20px; ">
+<md-select placeholder="你不是千年老妖，还是选个年龄吧" ng-model="user.birth" style="padding-left:30px;" >
+    <md-option ng-value="year" ng-repeat="year in years">{{year}}</md-option>
+
+</md-select>
+
+
+<div style="padding-left:20px; padding-top:20px;">
+    <md-button class="md-raised md-primary" ng-click='clickReg(evt)'>走一个</md-button>
+</div>
+
+</ion-view>

@@ -1,0 +1,30 @@
+
+    <ion-side-menus>
+        <ion-side-menu-content >
+            <ion-header-bar class="bar bar-header bar-calm">
+                <button class="button button-clear   back-button" ng-click="showDetail()">
+                    <i class="icon ion-arrow-left-c"></i>
+                </button>
+                <h1 class="title">地图：我的行程</h1>
+
+                <button menu-toggle="right"class="button button-icon icon ion-navicon"></button>
+            </ion-header-bar>
+            <ion-content class="max-content" >
+
+                <baidu-map options="mapOptions"></baidu-map>
+            </ion-content>
+        </ion-side-menu-content>
+
+        <ion-side-menu side="right">
+
+            <header class="bar bar-header bar-stable bar-dark">
+                <h1 ng- class="title">行程概览</h1>
+            </header>
+            <ion-content class="has-header list">
+                <ion-list ng-repeat="item in detail.list">
+                    <ion-item  class="item item-icon-left" nav-clear menu-close >
+                        <i class="icon ion-home"></i>{{item.poi_name}}
+                    </ion-item>
+                </ion-list>
+        </ion-side-menu>
+    </ion-side-menus>

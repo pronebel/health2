@@ -1,0 +1,5 @@
+{ "_id" : { "$oid" : "55306dd26060ba8fcf6a57c1" }, "uid" : 1, "target" : "chest", "completeness" : 0.7, "difficulty" : 0.3, "time" : { "$date" : "2015-01-01T16:08:08.000+0800" } }
+{ "_id" : { "$oid" : "55306e326060ba8fcf6a57c2" }, "uid" : 1, "target" : "leg", "completeness" : 1, "difficulty" : 0.2, "time" : { "$date" : "2015-01-04T17:10:08.000+0800" } }
+{ "_id" : { "$oid" : "55306e836060ba8fcf6a57c3" }, "uid" : 1, "target" : "back", "completeness" : 1, "difficulty" : 0.2, "time" : { "$date" : "2015-01-05T17:10:08.000+0800" } }
+{ "_id" : { "$oid" : "553076f86060ba8fcf6a57c4" }, "uid" : 1, "target" : "tricep", "completeness" : 1, "difficulty" : 0.2, "time" : { "$date" : "2015-01-05T17:10:08.000+0800" } }
+{ "_id" : { "$oid" : "553077056060ba8fcf6a57c5" }, "uid" : 1, "target" : "bicep", "completeness" : 1, "difficulty" : 0.2, "time" : { "$date" : "2015-01-06T17:10:08.000+0800" } }

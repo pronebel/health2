@@ -1,0 +1,16 @@
+<ion-modal-view><ion-pane>
+    <header frosted-bar class="bar bar-header bar-frosted">
+        <h1 class="title">咨询</h1>
+        <button style="z-index: 9999" class="button  button-clear button-primary" ng-click="modal.hide()">返回</button>
+    </header>
+    <ion-content class="has-header padding" start-y="120">
+        <ol class="messages">
+            <li ng-repeat="message in messages" ng-bind-html="message.content"></li>
+        </ol>
+    </ion-content>
+    <ion-footer-bar class="bar-frosted" style="background: #e3e3e3;">
+        <input type="text" ng-model="chatInfo.message" style="width:85%">
+        <button class="button  button-positive" style="width:13%" ng-click="add()">发送</button>
+    </ion-footer-bar>
+</ion-pane>
+    </ion-modal-view>

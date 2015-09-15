@@ -1,0 +1,22 @@
+<ion-view title="登录">
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">用户登录</h1>
+    </ion-header-bar>
+    <ion-content padding="true" class="has-header">
+        <form>
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">邮箱</span>
+                    <input type="text" ng-model="login.email" placeholder="">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">密码</span>
+                    <input type="password"  ng-model="login.pwd" placeholder="">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <button ng-click="doLogin()" class="button button-dark button-block">登录</button>
+            <a ng-click="showSignup()" class="button button-positive button-clear button-block">还没注册，注册个账号</a>
+        </form>
+    </ion-content>
+</ion-view>

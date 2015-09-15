@@ -1,0 +1,99 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="widget-box">
+            <div class="widget-title">
+                <span class="icon"><i class="fa fa-pencil"></i></span>
+                <h5>发布文章</h5>
+            </div>
+            <div class="widget-content nopadding">
+                <form  class="form-horizontal" method="post" novalidate="novalidate">
+                    <div id="form-wizard-1" class="step 、" style="display: block;">
+                        <div class="form-group">
+                            <label class="col-sm-2 col-md-2 col-lg-1 control-label">标题</label>
+
+                            <div class="col-sm-10 col-md-10 col-lg-11">
+                                <input class="form-control input-sm ui-wizard-content" id="J_title" type="text"
+                                       name="username">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 col-md-2 col-lg-1 control-label">内容</label>
+
+                            <div class="col-sm-10 col-md-10 col-lg-11">
+                                <script id="container" name="content" type="text/plain"></script>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form-actions">
+                        <input class="btn btn-primary " type="reset" >
+                        <input class="btn btn-primary" type="button" value="提交" id="J_submit">
+
+                        <div id="status"></div>
+                    </div>
+                    <div id="submitted"></div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- 配置文件 -->
+<script type="text/javascript" src="/assets/js/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/assets/js/ueditor/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+
+
+    $(document).ready(function(){
+        var ue = UE.getEditor('container',{
+                initialFrameHeight:390,
+                //工具栏上的所有的功能按钮和下拉框，可以在new编辑器的实例时选择自己需要的从新定义
+                //toolbars:[["bold","italic","underline","fontfamily","fontsize","forecolor","horizontal",'|',"justifyleft","justifycenter","justifyright",'|',"insertunorderedlist","insertorderedlist","link","|","fonts","insertimage","insertvideo"]]
+                //当鼠标放在工具栏上时显示的tooltip提示,留空支持自动多语言配置，否则以配置值为准
+                labelMap:{
+                    'anchor':'', 'undo':'', 'fonts':'文字格式', 'uploadimage':'上传图片'
+                }
+        });
+
+
+        $("#J_submit").click(function(){
+            var title = $("#J_title").val();
+            var content = ue.getContent();
+
+
+            var $content = $(content);
+            var imgs = $content.find("img");
+            var imgUrls = [];
+            for(var i=0;i<imgs.length;i++){
+                var url = $(imgs[i]).prop("src");
+                imgUrls.push(url);
+            }
+
+
+
+
+            $.ajax({
+                type: "POST",
+                url: "/api",
+                data: {
+                    cmd:"subject_insert",
+                    json:encodeURIComponent(JSON.stringify({
+                        title:title,
+                        content:content,
+                        imgs:imgUrls
+                    }))
+                },
+                success: function(rsp){
+                    console.log(rsp);
+                },
+                dataType: "json"
+            });
+        })
+
+    })
+
+</script>

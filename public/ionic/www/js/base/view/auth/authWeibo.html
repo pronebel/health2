@@ -1,0 +1,22 @@
+<div class="modal">
+    <ion-header-bar>
+        <h1 class="title">微博授权</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeAuth()">关闭</button>
+        </div>
+    </ion-header-bar>
+
+    <ion-content padding="true" scroll="false" class="has-header">
+        <form>
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">微博昵称</span>
+                    <input type="text" ng-model="auth.account" placeholder="">
+                </label>
+            </ion-list>
+            <button ng-click="doAuth()" class="button button-dark button-block">获取微博授权</button>
+        </form>
+    </ion-content>
+
+
+</div>

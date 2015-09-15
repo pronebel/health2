@@ -1,0 +1,32 @@
+<ion-view title="随时随地旅行-定行程" >
+    <ion-header-bar class="bar bar-header bar-calm">
+        <button class="button button-clear   back-button" ng-click="goIndex()">
+            <i class="icon ion-ios7-arrow-back"></i>返回
+        </button>
+        <h1 class="title">微服务</h1>
+        <div class="buttons">
+            <button class="button button-icon ion-more" ng-click="popover.show($event)">
+            </button>
+        </div>
+    </ion-header-bar>
+    <ion-content has-header="true" padding="true">
+        <div class="list" ng-repeat="item in services">
+
+            <a class="item item-thumbnail-left" href="#/earnuserdetail/{{item.wb_uid}}">
+                <img ng-src="{{item.profile.avatar_hd}}">
+                <h2> {{item.name}} <span>￥{{item.price}}</span></h2>
+                <p>{{item.desc}}</p>
+                <p>by {{item.profile.name}}</p>
+            </a>
+
+
+        </div>
+
+
+
+    </ion-content>
+</ion-view>
+
+
+
+

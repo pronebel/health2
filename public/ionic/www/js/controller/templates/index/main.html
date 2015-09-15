@@ -1,0 +1,43 @@
+<ion-view title="Home">
+
+<ion-content class="has-header">
+
+
+    <div class="list card">
+        <a href="#/train/search" class="item item-icon-left">
+            <i class="icon ion-home"></i>
+            火车时刻
+        </a>
+        <a href="#/travel" class="item item-icon-left">
+            <i class="icon ion-home"></i>
+            定行程
+        </a>
+
+        <a href="#/nearby" class="item item-icon-left">
+            <i class="icon ion-ios7-telephone"></i>
+            周边
+        </a>
+
+
+
+
+    </div>
+
+    <div class="list ServiceUser" >
+        <div class="item item-divider">
+            微服务
+            <a class="item-more" href="#/earnuserlist">更多</a>
+        </div>
+
+        <div ng-repeat="serviceItem in services">
+            <a class="item item-avatar" ng-href="#/earnuserdetail/{{serviceItem.wb_uid}}">
+                <img ng-src="{{serviceItem.profile.profile_image_url}}">
+                <h2> {{serviceItem.name}} <span>￥{{serviceItem.price}}</span></h2>
+                <p> {{serviceItem.desc}}  by {{serviceItem.profile.name}}</p>
+            </a>
+        </div>
+
+
+    </div>
+</ion-content>
+</ion-view>

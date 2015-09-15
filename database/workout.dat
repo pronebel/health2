@@ -1,0 +1,13 @@
+{"_id":{"$oid":"55336beb7c0101abb3a305ba"},"difficulity":0.4,"name":"杠铃站立弯举(手心向外)","sequence":3,"set_count":4,"standard_set":12,"target":"bicep"}
+{"_id":{"$oid":"55336beb7c0101abb3a305bb"},"difficulity":0.2,"name":"哑铃弯举","sequence":3,"set_count":4,"standard_set":12,"target":"bicep"}
+{"_id":{"$oid":"55336beb7c0101abb3a305bc"},"difficulity":0.1,"name":"托板弯举","sequence":3,"set_count":4,"standard_set":12,"target":"bicep"}
+{"_id":{"$oid":"55336beb7c0101abb3a305bd"},"difficulity":0.5,"name":"斜板弯举","sequence":3,"set_count":4,"standard_set":12,"target":"bicep"}
+{"_id":{"$oid":"55336beb7c0101abb3a305be"},"difficulity":0.6,"name":"俯坐弯举","sequence":3,"set_count":4,"standard_set":12,"target":"bicep"}
+{"_id":{"$oid":"55336beb7c0101abb3a305bf"},"difficulity":0.4,"name":"俯身杠铃弯举","sequence":3,"set_count":4,"standard_set":12,"target":"bicep"}
+{"_id":{"$oid":"55336beb7c0101abb3a305c0"},"difficulity":0.1,"name":"重锤下压","sequence":3,"set_count":4,"standard_set":12,"target":"tricep"}
+{"_id":{"$oid":"55336beb7c0101abb3a305c1"},"difficulity":0.4,"name":"站立臂屈伸","sequence":3,"set_count":4,"standard_set":12,"target":"tricep"}
+{"_id":{"$oid":"55336beb7c0101abb3a305c2"},"difficulity":0.2,"name":"单手哑铃臂曲伸","sequence":3,"set_count":4,"standard_set":12,"target":"tricep"}
+{"_id":{"$oid":"55336beb7c0101abb3a305c3"},"difficulity":0.5,"name":"俯立臂屈伸","sequence":3,"set_count":4,"standard_set":12,"target":"tricep"}
+{"_id":{"$oid":"55336beb7c0101abb3a305c4"},"difficulity":0.6,"name":"俯卧单臂侧平举","sequence":3,"set_count":4,"standard_set":12,"target":"tricep"}
+{"_id":{"$oid":"55336beb7c0101abb3a305c5"},"difficulity":0.3,"name":"颈后哑铃臂屈伸","sequence":3,"set_count":4,"standard_set":12,"target":"tricep"}
+{"_id":{"$oid":"55336beb7c0101abb3a305c6"},"difficulity":0.7,"name":"仰姿反屈伸（高脚）","sequence":3,"set_count":4,"standard_set":12,"target":"tricep"}

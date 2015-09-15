@@ -1,0 +1,38 @@
+<div class="modal">
+    <ion-header-bar>
+        <h1 class="title">用户登录</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeLogin()">关闭</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+
+            <div class="list">
+                <form >
+                <label class="item item-input">
+                    <span class="input-label">用户名</span>
+                    <input type="text" ng-model="loginData.username">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">密码</span>
+                    <input type="password" ng-model="loginData.password">
+                </label>
+                </form>
+                <label class="item">
+                    <button class="button button-block button-energized" ng-click="doLogin()" type="submit">登录</button>
+
+
+                </label>
+            </div>
+        <p ng-model="loginData.username"></p>
+        <div>
+            <div style="margin-top: 8px;padding-left:18px;">
+                <a class="other qq">QQ</a>
+                <a  ng-click="weiboAuth()" class="other xlblog">微博</a>
+                <a  class="other weixin">微信</a>
+            </div>
+        </div>
+
+    </ion-content>
+</div>
+

@@ -1,0 +1,42 @@
+
+<ion-view>
+    <ion-header-bar class="bar bar-header bar-calm">
+        <button class="button button-clear   back-button" ng-click="goIndex()">
+            <i class="icon ion-ios7-arrow-back"></i>返回
+        </button>
+        <h1 class="title">我的服务</h1>
+        <button class="button button-icon ion-compose" ng-click="modal.show()">
+        </button>
+    </ion-header-bar>
+
+    <ion-content>
+        <div class="list">
+
+            <form >
+                <label class="item item-input">
+                    <span class="input-label">当前时间：</span>
+                    <span ng-model="loginData.time"></span>分
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">总时间：</span>
+                    <input type="text" ng-model="loginData.total">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">单题时间：</span>
+                    <input type="text" ng-model="loginData.unit">
+                </label>
+            </form>
+            <label class="item">
+                <button class="button button-block button-energized" ng-click="beginTime()">开始</button>
+
+
+
+
+            </label>
+            <label class="item">
+                <button class="button button-block button-energized" ng-click="endTime()">停止</button>
+            </label>
+
+        </div>
+    </ion-content>
+</ion-view>

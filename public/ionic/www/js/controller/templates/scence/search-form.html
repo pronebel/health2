@@ -1,0 +1,33 @@
+<ion-view title="随时随地旅行-定行程" >
+    <ion-header-bar class="bar bar-header bar-calm">
+        
+        <h1 class="title">我要去哪儿</h1>
+
+    </ion-header-bar>
+    <ion-content has-header="true" padding="true">
+
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">我在这：</span>
+                <china-city placeholder="所在城市" class="formCity" ng-model="travel.from" />
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">去哪儿：</span>
+                <china-city placeholder="目标城市" class="toCity" ng-model="travel.to" />
+            </label>
+
+            <label class="item item-input">
+                <span class="input-label">游玩天数：</span>
+                <input type="number" ng-model="travel.days" placeholder="7">
+
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="searchTarget()">搜一下</button>
+        </div>
+    </ion-content>
+</ion-view>
+
+
+

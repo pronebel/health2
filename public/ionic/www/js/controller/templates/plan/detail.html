@@ -1,0 +1,59 @@
+<ion-view title="随时随地旅行-定行程" >
+    <ion-header-bar class="bar bar-header bar-calm">
+        <button class="button button-clear   back-button" ng-click="goPlanList()">
+            <i class="icon ion-ios7-arrow-back"></i>行程
+        </button>
+        <h1 class="title">行程：{{title}}</h1>
+        <button class="button button-clear" ng-click="showMap()">
+            <i class="icon ion-map"></i>
+        </button>
+
+
+    </ion-header-bar>
+    <ion-content has-header="true" padding="true">
+
+        <div  ng-repeat="item in planlist">
+
+
+            <div class="list card"  ng-class="{itemSelected:item.selected}">
+
+                <div class="item item-avatar">
+                    <img src="http://ww1.sinaimg.cn/bmiddle/67289d66jw1ejtcjjzeoej20go0b5go5.jpg">
+
+                    <h2>{{item.poi_name}}({{item.poi_duration}}小时)<i class="ion-arrow-down-b " ng-click="showOper(item)" style="float: right;" data-pack="default" data-tags=""></i></h2>
+                    <p></p>
+
+                </div>
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-thumbsup"></i>
+                        赞(5)
+                    </a>
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-chatbox"></i>
+                        评论(100)
+                    </a>
+
+                    <a class="tab-item" href="#">
+                        <i class="icon ion-share"></i>
+                        分享
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </ion-content>
+
+  <!--  <footer class="bar bar-footer">
+        <div class="button-bar">
+            <a class="button">列表模式</a>
+            <a class="button" ng-click="showMap()">地图模式</a>
+
+        </div>
+    </footer>-->
+
+</ion-view>
+
+
+

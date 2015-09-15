@@ -1,0 +1,90 @@
+<ion-view title="随时随地旅行-定行程" >
+    <ion-header-bar class="bar bar-header bar-calm">
+        <button class="button button-clear   back-button" ng-click="goIndex()">
+            <i class="icon ion-ios7-arrow-back"></i>返回
+        </button>
+        <h1 class="title">详情</h1>
+
+    </ion-header-bar>
+    <ion-content has-header="true" padding="true">
+        <div class="list">
+
+            <div class="item item-avatar">
+                <img ng-src="{{userdetail.profile_image_url}}">
+                <h2>[个人]{{userdetail.name}}</h2>
+                <p><button ng-click="chat()">咨询</button></p>
+                <p>服务理念：做不成买卖，做朋友</p>
+            </div>
+            <div class="item tabs tabs-secondary tabs-icon-top">
+                <a class="tab-item" href="#">
+                    <i class="icon ion-thumbsup"></i>
+                    关注 {{userdetail.friends_count}}
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-chatbox"></i>
+                    粉丝 {{userdetail.followers_count}}
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    微博 {{userdetail.statuses_count}}
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    微龄 {{weiboAges}}
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    服务 90
+                </a>
+            </div>
+            <div class="item">
+                <div>
+                    静安寺吃喝玩乐样样精通，巴巴啦啦啦，巴巴啦啦啦，巴巴啦啦啦，
+                </div>
+
+
+            </div>
+            <div class="item item-divider">
+                微博匹配度
+            </div>
+            <div  class="item">
+                <ul>
+
+                    <li>用户标签：
+                        <span ng-repeat="tagItem in commonTags">
+                            {{tagItem}}
+                        </span>
+
+                    </li>
+                    <li ng-hide="commonUsers.length==0">共同关注：
+                        <span ng-repeat="user in commonUsers">
+                            {{user.name}}
+                        </span>
+                    </li>
+                    <li>去过这儿：静安寺，龙门石窟，夏威夷，好莱坞</li>
+                </ul>
+            </div>
+            <div class="item item-divider">
+                服务内容
+            </div>
+
+            <div ng-repeat="group in groups">
+                <ion-item class="item-stable"  ng-click="group.shown = !group.shown" ng-class="{active: group.shown}">
+                    <i class="icon ion-mic-a"></i>
+                    {{group.name}}
+                    <span class="item-note">￥{{group.price}}/日 <button>预定</button></span>
+                </ion-item>
+                <ion-item class="item-accordion"    ng-show="group.shown">
+                    {{group.desc}}
+                </ion-item>
+            </div>
+        </div>
+
+
+
+    </ion-content>
+</ion-view>
+
+
+
+
